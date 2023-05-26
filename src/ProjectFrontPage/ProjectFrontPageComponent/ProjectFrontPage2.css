@@ -47,14 +47,14 @@ a {
 
 .main {
   z-index: 1;
-  width: 80%;
+  width: 90vw;
   padding: 0.5rem;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 3rem;
-  border: 1px solid red;;
+  /* border: 1px solid red;; */
 }
 @media  screen and (max-width: 1200px) {
   .main{
@@ -74,20 +74,33 @@ a {
 }
 @media  screen and (max-width: 400px) {
   .main{
-    width: 320px;
+    width: 360px;
+    border: 1px solid red;
+    /* padding: 0px; */
+    
   }
-  .project{
-    min-width: 200px;
-  height: 300px;
-  }
+  
+  
 }
-@media  screen and (max-width: 320px) {
+@media  screen and (max-width: 380px) {
   .main{
-    width: 250px;
+    width: 360px;
   }
-  .project{
-    min-width: 300px;
-  height: 300px;
+ 
+}
+@media  screen and (max-width: 360px) {
+  .main{
+    width: 340px;
+    padding: 0px;
+  } 
+}
+@media  screen and (max-width: 340px) {
+  .main{
+    width: 300px;
+    padding: 0px;
+  } 
+  a{
+    width: 300px;
   }
 }
 
@@ -95,15 +108,15 @@ a {
 
 
 .projects-container {
-  padding: 1.5rem;
+  padding: 0.5rem;
   display: flex;
-  gap: 3rem;
+  gap: 1.5rem;
   overflow-x: scroll;
 }
 
 .project {
   position: relative;
-  min-width: 100px;
+  min-width: 300px;
   height: 200px;
   overflow: hidden;
   box-shadow: -5px 5px 20px 7px black;
@@ -116,8 +129,8 @@ a {
 .project:hover {
   transform: skewY(0deg) rotateY(0deg);
   /* border: 1px solid yellow; */
-  min-width: 140px;
-  height: 300px;
+  /* min-width: 140px;
+  height: 300px; */
    border-radius: 20px;
  
 }
@@ -139,7 +152,7 @@ a {
 
 
 .project:hover .project__content {
-  opacity: 0.9;
+  opacity: 0.5;
 }
 
 .credits {
@@ -183,9 +196,19 @@ h2{
 }
 .heading{
 font-family: "Sofia", sans-serif;
-  color:rgb(223, 166, 10)
+  color:rgb(223, 166, 10);
+  Text-shadow: 2px 2px #16c011;
+  text-align: center;
 }
 
 h1{
 font-family: "Sofia", sans-serif;
+}
+
+a{
+  border:2px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  margin:0px;
+  box-shadow: 2px 2px green;
 }
